@@ -1,0 +1,39 @@
+<div class="container-form">
+    <form [formGroup]="formularioProduto">
+        <label>
+            Nome:
+            <input type="text" formControlName="name" id="">
+        </label>
+        <label>
+            Descrição:
+            <input type="text" formControlName="description" id="">
+        </label>
+        <label>
+            Código:
+            <input type="text" formControlName="code" id="">          
+        </label>
+        <label>
+            Tempo de preparação:
+            <input type="text" formControlName="time" id="">
+        </label>
+        <label>
+            Preço de custo:
+            <input type="text" formControlName="cost-price" id="">
+        </label>
+        <label>
+            Preço de venda:
+            <input type="text" formControlName="sale-price" id="">
+        </label>
+        <label>
+            Preço de venda:
+            <select formControlName="product-type">
+                <option value="DESSERT">DESSERT</option>
+                <option value="DRINK">DRINK</option>
+                <option value="SNAK">SNAK</option>
+            </select>
+        </label>
+        <div class="container-button">
+            <button type="submit" (click)="enviarForm()">Salvar</button>
+        </div>
+    </form>
+</div>
